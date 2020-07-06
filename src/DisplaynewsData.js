@@ -27,6 +27,7 @@ const DisplaynewsData = (props) => {
             {" "}
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href={`${newsData.url}`}
               className="btn btn-primary rounded mx-auto  btn-block"
             >
