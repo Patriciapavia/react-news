@@ -12,7 +12,7 @@ function GetNews() {
   const getNews = () => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=au&apiKey=45a403ebcaf74eefa85290bade9c0b5f`
+        `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=au&apiKey=45a403ebcaf74eefa85290bade9c0b5f`
       )
       .then((res) => {
         setNews(res.data.articles);

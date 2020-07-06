@@ -6,11 +6,13 @@ const DisplaynewsData = (props) => {
     <div className="col-md-3">
       <div className="card mb4 shadow-sm">
         <div className="card-body">
-          <p className="card-title">
-            <div className="card">
+          <div className="card">
+            <p>
+              {" "}
               <strong>{newsData.title}</strong>
-            </div>
-          </p>
+            </p>
+          </div>
+
           <img
             className="display-img img-thumbnail rounded mx-auto d-block"
             src={newsData.urlToImage}

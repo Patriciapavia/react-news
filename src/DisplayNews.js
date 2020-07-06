@@ -6,7 +6,10 @@ function DisplayNews({ news }) {
     <section>
       <div className="row">
         {news.map((newsData) => (
-          <DisplaynewsData newsData={newsData}></DisplaynewsData>
+          <DisplaynewsData
+            key={newsData.title}
+            newsData={newsData}
+          ></DisplaynewsData>
         ))}
       </div>
     </section>
